@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Blog - CatCafe</title>
+ <meta name="description"
+  content="Articole despre pisici, sfaturi pentru îngrijire, povești de adopție și noutăți din cafeneaua noastră.">
+ <link rel="stylesheet" href="../css/style.css">
+ <link rel="stylesheet" href="../css/responsive.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+ <!-- Header și Navigare (la fel ca în index.html) -->
+ <header>
+  <div class="container">
+   <div class="logo">
+    <a href="../index.html">
+     <img src="../img/logo/catcafe-logo.jpg" alt="CatCafe Logo">
+    </a>
+   </div>
+   <nav>
+    <ul>
+     <li><a href="../index.html">Home</a></li>
+   <li><a href="despre-noi.html">Despre noi</a></li>
+     <li><a href="../catalog.html">Catalog</a></li>
+     <li><a href="../pisici.html">Pisici</a></li>
+     <li><a href="../blog/" class="active">Blog</a></li>
+     <li><a href="../contact.html">Contact</a></li>
+    </ul>
+   </nav>
+   <div class="mobile-menu-toggle">
+    <i class="fas fa-bars"></i>
+   </div>
+  </div>
+ </header>
+
+ <!-- Hero Section -->
+ <section class="page-hero">
+  <div class="container">
+   <h1>Blog CatCafe</h1>
+   <p>Articole, sfaturi și povești despre prietenii noștri feline</p>
+  </div>
+ </section>
+
+ <!-- Categorii Blog -->
+ <section class="blog-categories">
+  <div class="container">
+   <div class="categories">
+    <a href="#" class="category-btn active">Toate</a>
+    <a href="#" class="category-btn">Îngrijire Pisici</a>
+    <a href="#" class="category-btn">Povești de Adopție</a>
+    <a href="#" class="category-btn">Noutăți Cafenea</a>
+    <a href="#" class="category-btn">Sfaturi pentru Proprietari</a>
+   </div>
+   <div class="search-blog">
+    <input type="text" id="search-articles" placeholder="Caută articole...">
+    <button class="search-btn"><i class="fas fa-search"></i></button>
+   </div>
+  </div>
+ </section>
+
+ <!-- Articole Recente -->
+ <section class="recent-articles">
+  <div class="container">
+   <div class="section-header">
+    <h2>Articole Recente</h2>
+    <p>Ultimele noastre publicații</p>
+   </div>
+   <div class="featured-article">
+    <div class="featured-image">
+     <img src="../img/blog/adoption-story-featured.jpg" alt="Poveste de adopție">
+    </div>
+    <div class="featured-content">
+     <div class="article-meta">
+      <span class="article-category">Povești de Adopție</span>
+      <span class="article-date">15 Mai 2024</span>
+     </div>
+     <h2>Povestea Bellei: De la abandonată la iubită</h2>
+     <p>Descoperă povestea emoționantă a Bellei, o pisică găsită abandonată într-un parc, și cum și-a găsit o familie
+      care o adoră după ce a petrecut timp în cafeneaua noastră.</p>
+     <a href="articol-1.html" class="btn btn-primary">Citește articolul</a>
+    </div>
+   </div>
+   <div class="articles-grid">
+    <!-- Articol 1 -->
+    <div class="article-card">
+     <div class="article-image">
+      <img src="../img/blog/cat-care.jpg" alt="Îngrijirea pisicilor">
+     </div>
+     <div class="article-content">
+      <div class="article-meta">
+       <span class="article-category">Îngrijire Pisici</span>
+       <span class="article-date">12 Mai 2024</span>
+      </div>
+      <h3>5 sfaturi pentru îngrijirea pisicilor adoptate</h3>
+      <p>Aflați cum să faceți tranziția unei pisici adoptate cât mai ușoară în noul său cămin. De la pregătirea
+       spațiului până la crearea unei rutine.</p>
+      <a href="articol-2.html" class="btn btn-text">Citește mai mult <i class="fas fa-arrow-right"></i></a>
+     </div>
+    </div>
+    <!-- Articol 2 -->
+    <div class="article-card">
+     <div class="article-image">
+      <img src="../img/blog/coffee-beans.jpg" alt="Boabe de cafea">
+     </div>
+     <div class="article-content">
+      <div class="article-meta">
+       <span class="article-category">Noutăți Cafenea</span>
+       <span class="article-date">8 Mai 2024</span>
+      </div>
+      <h3>Secretele unei cafele perfecte</h3>
+      <p>Descoperiți cum selectăm și preparăm cafeaua pentru a obține aroma perfectă. Sfaturi de la barista noastră
+       Elena.</p>
+      <a href="articol-3.html" class="btn btn-text">Citește mai mult <i class="fas fa-arrow-right"></i></a>
+     </div>
+    </div>
+    <!-- Articol 3 -->
+    <div class="article-card">
+     <div class="article-image">
+      <img src="../img/blog/cat-toys.jpg" alt="Jucării pentru pisici">
+     </div>
+     <div class="article-content">
+      <div class="article-meta">
+       <span class="article-category">Sfaturi pentru Proprietari</span>
+       <span class="article-date">3 Mai 2024</span>
+      </div>
+      <h3>Jucării DIY pentru pisica ta</h3>
+      <p>Idei creative pentru a crea jucării pentru pisica ta folosind obiecte simple din casă. Economisești bani și
+       oferi distracție!</p>
+      <a href="articol-4.html" class="btn btn-text">Citește mai mult <i class="fas fa-arrow-right"></i></a>
+     </div>
+    </div>
+ </section>
+
+ <!-- Newsletter -->
+ <section class="newsletter blog-newsletter">
+  <div class="container">
+   <div class="newsletter-content">
+    <h2>Abonează-te la Newsletter</h2>
+    <p>Primește cele mai noi articole direct în inbox-ul tău.</p>
+    <form class="newsletter-form">
+     <input type="email" placeholder="Adresa ta de email" required>
+     <button type="submit" class="btn">Abonează-te</button>
+    </form>
+   </div>
+  </div>
+ </section>
+
+ <!-- Footer (la fel ca în index.html) -->
+ <footer>
+  <div class="container">
+   <div class="footer-content">
+    <div class="footer-logo">
+     <img src="../img/logo/catcafe-logo.jpg" alt="CatCafe Logo">
+    </div>
+    <div class="footer-info">
+     <div class="footer-section">
+      <h3>Program</h3>
+      <p>Luni - Vineri: 10:00 - 21:00</p>
+      <p>Sâmbătă - Duminică: 10:00 - 22:00</p>
+     </div>
+     <div class="footer-section">
+      <h3>Contact</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Aleea Basarabi 2, Iași</p>
+      <p><i class="fas fa-phone"></i> 0712 345 678</p>
+      <p><i class="fas fa-envelope"></i> contact@catcafe.ro</p>
+     </div>
+     <div class="footer-section">
+      <h3>Urmărește-ne</h3>
+      <div class="social-icons">
+       <a href="https://www.facebook.com/share/18oNdSycn6/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/catcafeiasi?igsh=MWkxNGRycHNtdWI2Mg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>&copy; 2025 CatCafe. Toate drepturile rezervate.</p>
+    <div class="footer-links">
+     <a href="#">Termeni și condiții</a>
+     <a href="#">Politica de confidențialitate</a>
+    </div>
+   </div>
+  </div>
+ </footer>
+
+ <!-- JavaScript -->
+ <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Catalog Produse - CatCafe</title>
+ <meta name="description" content="Explorează meniul nostru de cafele speciale, băuturi și gustări în tematică felină.">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/responsive.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+ <!-- Header și Navigare -->
+ <header>
+  <div class="container">
+   <div class="logo">
+    <a href="index.html">
+     <img src="img/logo/catcafe-logo.svg" alt="CatCafe Logo">
+    </a>
+   </div>
+   <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="despre-noi.html">Despre noi</a></li>
+     <li><a href="catalog.html" class="active">Catalog</a></li>
+     <li><a href="pisici.html">Pisici</a></li>
+     <li><a href="blog/">Blog</a></li>
+     <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </nav>
+   <div class="mobile-menu-toggle">
+    <i class="fas fa-bars"></i>
+   </div>
+  </div>
+ </header>
+
+ <!-- Hero Section -->
+ <section class="page-hero">
+  <div class="container">
+   <h1>Meniul Nostru</h1>
+   <p>Băuturi și gustări delicioase în compania pisicilor</p>
+  </div>
+ </section>
+
+ <!-- Filtre Catalog -->
+ <section class="catalog-filters">
+  <div class="container">
+   <div class="filters">
+    <button class="filter-btn active" data-filter="all">Toate</button>
+    <button class="filter-btn" data-filter="coffee">Cafea</button>
+    <button class="filter-btn" data-filter="tea">Ceai</button>
+    <button class="filter-btn" data-filter="cold">Băuturi Reci</button>
+    <button class="filter-btn" data-filter="snack">Gustări</button>
+   </div>
+   <div class="search-filter">
+    <input type="text" id="search-products" placeholder="Caută produse...">
+    <button class="search-btn"><i class="fas fa-search"></i></button>
+   </div>
+  </div>
+ </section>
+
+ <!-- Cafea Section -->
+ <section class="product-section" id="coffee">
+  <div class="container">
+   <div class="section-header">
+    <h2>Specialități de Cafea</h2>
+    <p>Băuturi pe bază de cafea, pregătite cu grijă de baristele noastre</p>
+   </div>
+   <div class="products-grid">
+    <!-- Produs 1 -->
+    <div class="product-card" id="cappuccino">
+     <div class="product-image">
+      <img src="img/products/cappuccino.jpg" alt="Cappuccino Pisicuță">
+     </div>
+     <div class="product-info">
+      <h3>Cappuccino Pisicuță</h3>
+      <p>Cappuccino cu spumă de lapte în formă de pisică, decorat artistic.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Espresso, lapte, spumă de lapte</p>
+       <p><strong>Volum:</strong> 200ml</p>
+      </div>
+      <p class="price">15 lei</p>
+     </div>
+    </div>
+    <!-- Produs 2 -->
+    <div class="product-card" id="latte">
+     <div class="product-image">
+      <img src="img/products/cat-latte.jpg" alt="Cat Latte">
+     </div>
+     <div class="product-info">
+      <h3>Cat Latte</h3>
+      <p>Latte cu sirop de caramel și scorțișoară, decorat cu model de pisică.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Espresso, lapte, sirop de caramel, scorțișoară</p>
+       <p><strong>Volum:</strong> 300ml</p>
+      </div>
+      <p class="price">18 lei</p>
+     </div>
+    </div>
+    <!-- Produs 3 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/espresso.jpg" alt="Espresso Purrfect">
+     </div>
+     <div class="product-info">
+      <h3>Espresso Purrfect</h3>
+      <p>Espresso dublu de specialitate cu note de ciocolată și fructe de pădure.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Cafea 100% Arabica</p>
+       <p><strong>Volum:</strong> 60ml</p>
+      </div>
+      <p class="price">12 lei</p>
+     </div>
+    </div>
+    <!-- Produs 4 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/mocha.jpg" alt="Whisker Mocha">
+     </div>
+     <div class="product-info">
+      <h3>Whisker Mocha</h3>
+      <p>Mocha cu ciocolată belgiană și frișcă, decorată cu urme de "lăbuțe".</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Espresso, lapte, ciocolată, frișcă</p>
+       <p><strong>Volum:</strong> 300ml</p>
+      </div>
+      <p class="price">20 lei</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Ceai Section -->
+ <section class="product-section" id="tea">
+  <div class="container">
+   <div class="section-header">
+    <h2>Ceaiuri Aromate</h2>
+    <p>Ceaiuri delicioase pentru momente de relaxare</p>
+   </div>
+   <div class="products-grid">
+    <!-- Produs 1 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/cat-mint-tea.jpg" alt="Ceai de Mentă Felină">
+     </div>
+     <div class="product-info">
+      <h3>Ceai de Mentă Felină</h3>
+      <p>Ceai de mentă proaspătă cu miere, perfect pentru relaxare.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Mentă, miere</p>
+       <p><strong>Volum:</strong> 300ml</p>
+      </div>
+      <p class="price">14 lei</p>
+     </div>
+    </div>
+    <!-- Produs 2 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/cat-nap-tea.jpg" alt="Cat Nap Tea">
+     </div>
+     <div class="product-info">
+      <h3>Cat Nap Tea</h3>
+      <p>Amestec relaxant de plante: mușețel, lavandă și valeriană.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Mușețel, lavandă, valeriană</p>
+       <p><strong>Volum:</strong> 300ml</p>
+      </div>
+      <p class="price">16 lei</p>
+     </div>
+    </div>
+    <!-- Produs 3 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/fruit-tea.jpg" alt="Feline Fruit Infusion">
+     </div>
+     <div class="product-info">
+      <h3>Feline Fruit Infusion</h3>
+      <p>Infuzie de fructe de pădure cu hibiscus și portocală.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Fructe de pădure, hibiscus, portocală</p>
+       <p><strong>Volum:</strong> 300ml</p>
+      </div>
+      <p class="price">15 lei</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Băuturi Reci Section -->
+ <section class="product-section" id="cold">
+  <div class="container">
+   <div class="section-header">
+    <h2>Băuturi Reci</h2>
+    <p>Răcoritoare pentru zilele călduroase</p>
+   </div>
+   <div class="products-grid">
+    <!-- Produs 1 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/iced-coffee.jpg" alt="Iced Paw Coffee">
+     </div>
+     <div class="product-info">
+      <h3>Iced Paw Coffee</h3>
+      <p>Cafea rece cu lapte, sirop de vanilie și cuburi de gheață.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Cafea, lapte, sirop de vanilie, gheață</p>
+       <p><strong>Volum:</strong> 400ml</p>
+      </div>
+      <p class="price">18 lei</p>
+     </div>
+    </div>
+    <!-- Produs 2 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/cat-smoothie.jpg" alt="Cat Berry Smoothie">
+     </div>
+     <div class="product-info">
+      <h3>Cat Berry Smoothie</h3>
+      <p>Smoothie cu fructe de pădure, banană și iaurt, decorat cu urechi de pisică.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Fructe de pădure, banană, iaurt</p>
+       <p><strong>Volum:</strong> 350ml</p>
+      </div>
+      <p class="price">19 lei</p>
+     </div>
+    </div>
+    <!-- Produs 3 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/cat-lemonade.jpg" alt="Kitty Lemonade">
+     </div>
+     <div class="product-info">
+      <h3>Kitty Lemonade</h3>
+      <p>Limonadă proaspătă cu mentă și fructe proaspete.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Lămâie, apă, sirop de zahăr, mentă, fructe</p>
+       <p><strong>Volum:</strong> 400ml</p>
+      </div>
+      <p class="price">16 lei</p>
+     </div>
+    </div>
+    <!-- Produs 4 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/iced-tea.jpg" alt="Purrfect Iced Tea">
+     </div>
+     <div class="product-info">
+      <h3>Purrfect Iced Tea</h3>
+      <p>Ceai rece de fructe cu felii de portocală și lămâie.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Ceai de fructe, portocală, lămâie, sirop de zahăr</p>
+       <p><strong>Volum:</strong> 400ml</p>
+      </div>
+      <p class="price">15 lei</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Gustări Section -->
+ <section class="product-section" id="snack">
+  <div class="container">
+   <div class="section-header">
+    <h2>Gustări Savuroase</h2>
+    <p>Opțiuni pentru o masă ușoară în compania pisicilor</p>
+   </div>
+   <div class="products-grid">
+    <!-- Produs 1 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/avocado-toast.jpg" alt="Avocado Toast">
+     </div>
+     <div class="product-info">
+      <h3>Avocado Purr Toast</h3>
+      <p>Toast cu avocado, ou poșat și semințe, decorat cu lăbuțe de pisică din condimente.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Pâine integrală, avocado, ou, semințe</p>
+       <p><strong>Greutate:</strong> 200g</p>
+      </div>
+      <p class="price">25 lei</p>
+     </div>
+    </div>
+    <!-- Produs 2 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/cat-sandwich.jpg" alt="Sandwich Pisicuță">
+     </div>
+     <div class="product-info">
+      <h3>Sandwich Pisicuță</h3>
+      <p>Sandwich cu hummus, legume proaspete și brânză, tăiat în formă de pisică.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Pâine, hummus, roșii, castraveți, brânză</p>
+       <p><strong>Greutate:</strong> 250g</p>
+      </div>
+      <p class="price">22 lei</p>
+     </div>
+    </div>
+    <!-- Produs 3 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/cat-cookie.jpg" alt="Cookie Pisicuță">
+     </div>
+     <div class="product-info">
+      <h3>Cookie Pisicuță</h3>
+      <p>Fursec în formă de pisică cu ciocolată și nucă.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Făină, unt, zahăr, ciocolată, nuci</p>
+       <p><strong>Greutate:</strong> 50g</p>
+      </div>
+      <p class="price">12 lei</p>
+     </div>
+    </div>
+    <!-- Produs 4 -->
+    <div class="product-card">
+     <div class="product-image">
+      <img src="img/products/cat-cupcake.jpg" alt="Cupcake Pisicuță">
+     </div>
+     <div class="product-info">
+      <h3>Cupcake Pisicuță</h3>
+      <p>Cupcake cu vanilie și frosting de ciocolată, decorat cu urechi de pisică.</p>
+      <div class="product-details">
+       <p><strong>Conține:</strong> Făină, unt, zahăr, vanilie, ciocolată</p>
+       <p><strong>Greutate:</strong> 80g</p>
+      </div>
+      <p class="price">14 lei</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Alergeni și Informații -->
+ <section class="allergens-info">
+  <div class="container">
+   <div class="section-header">
+    <h2>Informații Importante</h2>
+    <p>Alergeni și alternative disponibile</p>
+   </div>
+   <div class="allergens-content">
+    <div class="allergens-text">
+     <p>La CatCafe, ne străduim să oferim opțiuni pentru toți clienții noștri. Avem disponibile următoarele alternative:
+     </p>
+     <ul>
+      <li><strong>Lapte vegetal:</strong> soia, migdale, ovăz, cocos (disponibile pentru orice băutură pe bază de cafea
+       sau ceai, +2 lei)</li>
+      <li><strong>Produse fără gluten:</strong> Întreabă personalul despre opțiunile disponibile</li>
+      <li><strong>Produse vegane:</strong> Oferim alternative vegane pentru majoritatea gustărilor noastre</li>
+     </ul>
+     <p>Pentru informații detaliate despre alergeni, te rugăm să consulți personalul înainte de a comanda.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Footer (la fel ca în index.html) -->
+ <footer>
+  <div class="container">
+   <div class="footer-content">
+    <div class="footer-logo">
+     <img src="img/logo/catcafe-logo-white.svg" alt="CatCafe Logo">
+    </div>
+    <div class="footer-info">
+     <div class="footer-section">
+      <h3>Program</h3>
+      <p>Luni - Vineri: 10:00 - 21:00</p>
+      <p>Sâmbătă - Duminică: 10:00 - 22:00</p>
+     </div>
+     <div class="footer-section">
+      <h3>Contact</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Strada Exemplu 123, Iași</p>
+      <p><i class="fas fa-phone"></i> 0712 345 678</p>
+      <p><i class="fas fa-envelope"></i> contact@catcafe.ro</p>
+     </div>
+     <div class="footer-section">
+      <h3>Urmărește-ne</h3>
+      <div class="social-icons">
+       <a href="#"><i class="fab fa-facebook-f"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>&copy; 2024 CatCafe. Toate drepturile rezervate.</p>
+    <div class="footer-links">
+     <a href="#">Termeni și condiții</a>
+     <a href="#">Politica de confidențialitate</a>
+    </div>
+   </div>
+  </div>
+ </footer>
+
+ <!-- JavaScript -->
+ <script src="js/main.js"></script>
+</body>
+
+</html>

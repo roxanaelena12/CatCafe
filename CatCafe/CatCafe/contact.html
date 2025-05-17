@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contact - CatCafe</title>
+ <meta name="description"
+  content="Contactează-ne pentru rezervări, informații despre adopții sau orice întrebare despre CatCafe.">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/responsive.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+ <!-- Header și Navigare (la fel ca în index.html) -->
+ <header>
+  <div class="container">
+   <div class="logo">
+    <a href="index.html">
+     <img src="img/logo/catcafe-logo.svg" alt="CatCafe Logo">
+    </a>
+   </div>
+   <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="despre-noi.html">Despre noi</a></li>
+     <li><a href="catalog.html">Catalog</a></li>
+     <li><a href="pisici.html">Pisici</a></li>
+     <li><a href="blog/">Blog</a></li>
+     <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+   </nav>
+   <div class="mobile-menu-toggle">
+    <i class="fas fa-bars"></i>
+   </div>
+  </div>
+ </header>
+
+ <!-- Hero Section -->
+ <section class="page-hero">
+  <div class="container">
+   <h1>Contact</h1>
+   <p>Contactează-ne pentru orice întrebare</p>
+  </div>
+ </section>
+
+ <!-- Informații contact -->
+ <section class="contact-info">
+  <div class="container">
+   <div class="contact-grid">
+    <div class="contact-card">
+     <div class="contact-icon">
+      <i class="fas fa-map-marker-alt"></i>
+     </div>
+     <h3>Locație</h3>
+     <p>Strada Exemplu 123<br>Iași, România</p>
+    </div>
+    <div class="contact-card">
+     <div class="contact-icon">
+      <i class="fas fa-phone"></i>
+     </div>
+     <h3>Telefon</h3>
+     <p>0712 345 678</p>
+    </div>
+    <div class="contact-card">
+     <div class="contact-icon">
+      <i class="fas fa-envelope"></i>
+     </div>
+     <h3>Email</h3>
+     <p>contact@catcafe.ro</p>
+    </div>
+    <div class="contact-card">
+     <div class="contact-icon">
+      <i class="fas fa-clock"></i>
+     </div>
+     <h3>Program</h3>
+     <p>Luni - Vineri: 10:00 - 21:00<br>Sâmbătă - Duminică: 10:00 - 22:00</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Formular contact -->
+ <section class="contact-form-section">
+  <div class="container">
+   <div class="section-header">
+    <h2>Trimite-ne un mesaj</h2>
+    <p>Suntem aici pentru a răspunde întrebărilor tale</p>
+   </div>
+   <div class="contact-form-container">
+    <form class="contact-form">
+     <div class="form-row">
+      <div class="form-group">
+       <label for="name">Numele tău</label>
+       <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+       <label for="email">Email</label>
+       <input type="email" id="email" name="email" required>
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="subject">Subiect</label>
+      <input type="text" id="subject" name="subject" required>
+     </div>
+     <div class="form-group">
+      <label for="message">Mesajul tău</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+     </div>
+     <div class="form-submit">
+      <button type="submit" class="btn btn-primary">Trimite mesajul</button>
+     </div>
+    </form>
+   </div>
+  </div>
+ </section>
+
+ <!-- Hartă -->
+ <section class="map-section">
+  <div class="container">
+   <div class="section-header">
+    <h2>Găsește-ne pe hartă</h2>
+    <p>Vino să ne vizitezi</p>
+   </div>
+   <div class="map-container">
+    <iframe
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43232.20536886963!2d27.55689542187499!3d47.158588899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb7cf639ddbb%3A0x7ccb80da5426f53c!2zSWHImWk!5e0!3m2!1sro!2sro!4v1684147440408!5m2!1sro!2sro"
+     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+     referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+  </div>
+ </section>
+
+ <!-- FAQ -->
+ <section class="faq-section">
+  <div class="container">
+   <div class="section-header">
+    <h2>Întrebări Frecvente</h2>
+    <p>Răspunsuri la cele mai comune întrebări</p>
+   </div>
+   <div class="faq-container">
+    <div class="faq-item">
+     <div class="faq-question">
+      <h3>Este necesară rezervarea pentru a vizita cafeneaua?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+     </div>
+     <div class="faq-answer">
+      <p>Nu este obligatorie, dar este recomandată în weekend sau pentru grupuri mai mari de 4 persoane. Poți face o
+       rezervare prin telefon sau completând formularul de pe site.</p>
+     </div>
+    </div>
+    <div class="faq-item">
+     <div class="faq-question">
+      <h3>Cum funcționează procesul de adopție?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+     </div>
+     <div class="faq-answer">
+      <p>Procesul începe cu vizita la cafenea pentru a interacționa cu pisicile. Dacă găsești o pisică potrivită,
+       completezi formularul de adopție, urmează un scurt interviu și, după aprobare, poți lua pisica acasă. Taxa de
+       adopție acoperă costurile medicale anterioare.</p>
+     </div>
+    </div>
+    <div class="faq-item">
+     <div class="faq-question">
+      <h3>Pot veni cu copiii la cafenea?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+     </div>
+     <div class="faq-answer">
+      <p>Da, copiii sunt bineveniți, dar trebuie să fie mereu supravegheați și învățați cum să interacționeze cu
+       pisicile într-un mod blând. Vârsta minimă recomandată este de 5 ani.</p>
+     </div>
+    </div>
+    <div class="faq-item">
+     <div class="faq-question">
+      <h3>Pot să-mi aduc propria pisică în cafenea?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+     </div>
+     <div class="faq-answer">
+      <p>Din păcate, nu este permis să aduci propria pisică sau alt animal de companie în cafenea, pentru a proteja
+       sănătatea și siguranța pisicilor noastre.</p>
+     </div>
+    </div>
+    <div class="faq-item">
+     <div class="faq-question">
+      <h3>Oferă cafeneaua opțiuni pentru persoanele cu alergii?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+     </div>
+     <div class="faq-answer">
+      <p>Da, avem opțiuni de lapte vegetal (soia, migdale, ovăz) pentru băuturile pe bază de cafea. De asemenea, avem
+       produse fără gluten. Te rugăm să menționezi alergiile când faci comanda.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- CTA -->
+ <section class="cta">
+  <div class="container">
+   <h2>Vino să ne cunoști!</h2>
+   <p>Te așteptăm cu cafea delicioasă și pisici adorabile.</p>
+   <a href="#" class="btn btn-primary btn-large">Rezervă o masă</a>
+  </div>
+ </section>
+
+ <!-- Footer (la fel ca în index.html) -->
+ <footer>
+  <!-- Conținut footer similar cu index.html -->
+ </footer>
+
+ <!-- JavaScript -->
+ <script src="js/main.js"></script>
+</body>
+
+</html>

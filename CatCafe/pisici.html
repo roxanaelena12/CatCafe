@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pisicile Noastre - CatCafe</title>
+ <meta name="description" content="Cunoaște pisicile din cafeneaua noastră și descoperă cum poți adopta sau ajuta.">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/responsive.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+ <!-- Header și Navigare (la fel ca în index.html) -->
+ <header>
+  <div class="container">
+   <div class="logo">
+    <a href="index.html">
+     <img src="img/logo/catcafe-logo.jpg" alt="CatCafe Logo">
+    </a>
+   </div>
+   <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+    <li><a href="despre-noi.html">Despre noi</a></li>
+     <li><a href="catalog.html">Catalog</a></li>
+     <li><a href="pisici.html" class="active">Pisici</a></li>
+     <li><a href="blog/">Blog</a></li>
+     <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </nav>
+   <div class="mobile-menu-toggle">
+    <i class="fas fa-bars"></i>
+   </div>
+  </div>
+ </header>
+
+ <!-- Hero Section -->
+ <section class="page-hero">
+  <div class="container">
+   <h1>Pisicile Noastre</h1>
+   <p>Cunoaște viitoarele tale prietene cu patru lăbuțe</p>
+  </div>
+ </section>
+
+ <!-- Despre pisicile noastre -->
+ <section class="about-cats">
+  <div class="container">
+   <div class="section-header">
+    <h2>Despre Pisicile CatCafe</h2>
+    <p>Povestea din spatele prietenilor noștri feline</p>
+   </div>
+   <div class="about-cats-content">
+    <div class="about-cats-text">
+     <p>Toate pisicile din cafeneaua noastră au fost salvate de pe străzile din Iași sau din împrejurimi. Le oferim
+      adăpost, hrană, îngrijire medicală și, cel mai important, multă dragoste până când își găsesc familiile pentru
+      totdeauna.</p>
+     <p>Fiecare pisică este vaccinată, deparazitată și sterilizată înainte de a fi disponibilă pentru adopție. Ne
+      asigurăm că sunt sănătoase, sociabile și pregătite pentru noua lor casă.</p>
+     <p>Dacă vrei să adopți una dintre pisicile noastre, te invităm să petreci timp cu ele în cafenea, să le cunoști
+      personalitatea și să vezi dacă vă potriviți. Procesul nostru de adopție este conceput pentru a asigura cea mai
+      bună potrivire între pisică și familia sa.</p>
+    </div>
+    <div class="about-cats-image">
+     <img src="img/cats/cat-group.jpg" alt="Grup de pisici la CatCafe">
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Filtre Pisici -->
+ <section class="cats-filters">
+  <div class="container">
+   <div class="filters">
+    <button class="filter-btn active" data-filter="all">Toate</button>
+    <button class="filter-btn" data-filter="kitten">Pui</button>
+    <button class="filter-btn" data-filter="adult">Adulte</button>
+    <button class="filter-btn" data-filter="adopted">Adoptate recent</button>
+   </div>
+   <div class="search-filter">
+    <input type="text" id="search-cats" placeholder="Caută pisici după nume...">
+    <button class="search-btn"><i class="fas fa-search"></i></button>
+   </div>
+  </div>
+ </section>
+
+ <!-- Pisici disponibile pentru adopție -->
+ <section class="cats-available">
+  <div class="container">
+   <div class="section-header">
+    <h2>Pisici Disponibile pentru Adopție</h2>
+    <p>Găsește-ți un nou prieten pentru viață</p>
+   </div>
+   <div class="cats-grid">
+    <!-- Pisica 1 -->
+    <div class="cat-card" id="mitzi">
+     <div class="cat-image">
+      <img src="img/cats/mitzi.jpg" alt="Mitzi">
+      <div class="cat-status available">Disponibilă</div>
+     </div>
+     <div class="cat-info">
+      <h3>Mitzi</h3>
+      <div class="cat-details">
+       <p><strong>Vârstă:</strong> 2 ani</p>
+       <p><strong>Sex:</strong> Femelă</p>
+       <p><strong>Personalitate:</strong> Jucăușă și prietenoasă</p>
+      </div>
+      <p class="cat-story">Mitzi a fost găsită într-un parc, abandonată la vârsta de doar câteva săptămâni. Este foarte
+       sociabilă și adoră să se joace cu mingile și să se cuibărească în brațele vizitatorilor.</p>
+      <a href="#" class="btn btn-primary cat-adopt-btn">Vreau să adopt</a>
+     </div>
+    </div>
+    <!-- Pisica 2 -->
+    <div class="cat-card" id="felix">
+     <div class="cat-image">
+      <img src="img/cats/felix.jpg" alt="Felix">
+      <div class="cat-status available">Disponibil</div>
+     </div>
+     <div class="cat-info">
+      <h3>Felix</h3>
+      <div class="cat-details">
+       <p><strong>Vârstă:</strong> 3 ani</p>
+       <p><strong>Sex:</strong> Mascul</p>
+       <p><strong>Personalitate:</strong> Calm și afectuos</p>
+      </div>
+      <p class="cat-story">Felix este un motan blând care a fost abandonat când stăpânii săi s-au mutat. Este foarte
+       calm și îi place să stea pe pervaz și să observe lumea exterioară. Se înțelege bine cu alte pisici.</p>
+      <a href="#" class="btn btn-primary cat-adopt-btn">Vreau să adopt</a>
+     </div>
+    </div>
+    <!-- Pisica 3 -->
+    <div class="cat-card" id="luna">
+     <div class="cat-image">
+      <img src="img/cats/luna.jpg" alt="Luna">
+      <div class="cat-status available">Disponibilă</div>
+     </div>
+     <div class="cat-info">
+      <h3>Luna</h3>
+      <div class="cat-details">
+       <p><strong>Vârstă:</strong> 1 an</p>
+       <p><strong>Sex:</strong> Femelă</p>
+       <p><strong>Personalitate:</strong> Curioasă și energică</p>
+      </div>
+      <p class="cat-story">Luna a fost salvată dintr-un adăpost supraaglomerat. Este foarte energică și adoră să
+       exploreze fiecare colțișor al cafenelei. Este perfectă pentru o familie activă.</p>
+      <a href="#" class="btn btn-primary cat-adopt-btn">Vreau să adopt</a>
+     </div>
+    </div>
+    <!-- Pisica 4 -->
+    <div class="cat-card" id="oreo">
+     <div class="cat-image">
+      <img src="img/cats/oreo.jpeg" alt="Oreo">
+      <div class="cat-status available">Disponibil</div>
+     </div>
+     <div class="cat-info">
+      <h3>Oreo</h3>
+      <div class="cat-details">
+       <p><strong>Vârstă:</strong> 6 luni</p>
+       <p><strong>Sex:</strong> Mascul</p>
+       <p><strong>Personalitate:</strong> Jucăuș și afectuos</p>
+      </div>
+      <p class="cat-story">Oreo este un pui energic care a fost găsit împreună cu frații săi într-o cutie lângă un
+       supermarket. Este foarte jucăuș și iubește atenția oamenilor.</p>
+      <a href="#" class="btn btn-primary cat-adopt-btn">Vreau să adopt</a>
+     </div>
+    </div>
+
+<!-- Pisica 6 -->
+<div class="cat-card" id="simba">
+  <div class="cat-image">
+      <img src="img/cats/simba.jpg" alt="Simba">
+      <div class="cat-status available">Disponibil</div>
+  </div>
+  <div class="cat-info">
+      <h3>Simba</h3>
+      <div class="cat-details">
+          <p><strong>Vârstă:</strong> 8 luni</p>
+          <p><strong>Sex:</strong> Mascul</p>
+          <p><strong>Personalitate:</strong> Curajos și jucăuș</p>
+      </div>
+      <p class="cat-story">Simba a fost găsit pe stradă, încercând să se adăpostească de ploaie. În ciuda începutului dificil, este un pui foarte curajos și sociabil. Adoră să se joace și să sară peste tot.</p>
+      <a href="#" class="btn btn-primary cat-adopt-btn">Vreau să adopt</a>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Pisici adoptate recent -->
+<section class="cats-adopted">
+<div class="container">
+<div class="section-header">
+<h2>Pisici Adoptate Recent</h2>
+<p>Povești cu final fericit</p>
+</div>
+<div class="cats-grid">
+<!-- Pisica 1 -->
+<div class="cat-card">
+  <div class="cat-image">
+      <img src="img/cats/bella.jpg" alt="Bella">
+      <div class="cat-status adopted">Adoptată</div>
+  </div>
+  <div class="cat-info">
+      <h3>Bella</h3>
+      <div class="cat-details">
+          <p><strong>Vârstă:</strong> 1.5 ani</p>
+          <p><strong>Sex:</strong> Femelă</p>
+          <p><strong>Adoptată de:</strong> Familia Popescu</p>
+      </div>
+      <p class="cat-story">Bella a fost adoptată în aprilie 2024. Acum trăiește fericită într-un apartament spațios cu mulți locuri de cățărat și joacă.</p>
+  </div>
+</div>
+<!-- Pisica 2 -->
+<div class="cat-card">
+  <div class="cat-image">
+      <img src="img/cats/tom.jpg" alt="Tom">
+      <div class="cat-status adopted">Adoptat</div>
+  </div>
+  <div class="cat-info">
+      <h3>Tom</h3>
+      <div class="cat-details">
+          <p><strong>Vârstă:</strong> 3 ani</p>
+          <p><strong>Sex:</strong> Mascul</p>
+          <p><strong>Adoptat de:</strong> Anca și Mihai</p>
+      </div>
+      <p class="cat-story">Tom a fost adoptat în martie 2024. Are acum o soră canină și se înțeleg de minune. Anca ne trimite regulat fotografii cu aventurile lor.</p>
+  </div>
+</div>
+<!-- Pisica 3 -->
+<div class="cat-card">
+  <div class="cat-image">
+      <img src="img/cats/cleo.jpg" alt="Cleo">
+      <div class="cat-status adopted">Adoptată</div>
+  </div>
+  <div class="cat-info">
+      <h3>Cleo</h3>
+      <div class="cat-details">
+          <p><strong>Vârstă:</strong> 4 ani</p>
+          <p><strong>Sex:</strong> Femelă</p>
+          <p><strong>Adoptată de:</strong> Familia Ionescu</p>
+      </div>
+      <p class="cat-story">Cleo a fost adoptată în februarie 2024 după ce a petrecut aproape un an în cafeneaua noastră. Acum are o casă la țară cu grădină mare și mulți copaci pentru cățărat.</p>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Procesul de adopție -->
+<section class="adoption-process">
+<div class="container">
+<div class="section-header">
+<h2>Procesul de Adopție</h2>
+<p>Cum poți oferi un cămin uneia dintre pisicile noastre</p>
+</div>
+<div class="process-steps">
+<div class="process-step">
+  <div class="step-number">1</div>
+  <div class="step-content">
+      <h3>Vizitează CatCafe</h3>
+      <p>Vino la cafeneaua noastră și petrece timp cu pisicile. Observă care dintre ele ți se potrivește cel mai bine.</p>
+  </div>
+</div>
+<div class="process-step">
+  <div class="step-number">2</div>
+  <div class="step-content">
+      <h3>Completează formularul de adopție</h3>
+      <p>Odată ce ai găsit pisica dorită, completează formularul nostru de adopție. Acesta ne ajută să înțelegem mai bine mediul în care va trăi pisica.</p>
+  </div>
+</div>
+<div class="process-step">
+  <div class="step-number">3</div>
+  <div class="step-content">
+      <h3>Interviu și verificare</h3>
+      <p>Vom avea o scurtă discuție despre așteptările tale și nevoile pisicii. În unele cazuri, putem solicita o verificare a locuinței.</p>
+  </div>
+</div>
+<div class="process-step">
+  <div class="step-number">4</div>
+  <div class="step-content">
+      <h3>Adopție și urmărire</h3>
+      <p>După aprobarea adopției, vei semna contractul de adopție, vei achita taxa de adopție (care acoperă costurile medicale) și îți vei lua noul prieten acasă. Vom păstra legătura pentru a vedea cum vă adaptați.</p>
+  </div>
+</div>
+</div>
+<div class="adoption-cta">
+<a href="contact.html" class="btn btn-primary">Contactează-ne pentru adopție</a>
+</div>
+</div>
+</section>
+
+<!-- Modalul pentru adopție -->
+<div class="adoption-modal" id="adoptionModal">
+<div class="modal-content">
+<span class="close-modal">&times;</span>
+<h2>Formular de Interes pentru Adopție</h2>
+<p>Completează formularul de mai jos și te vom contacta pentru a discuta despre procesul de adopție.</p>
+<form class="adoption-form">
+<div class="form-group">
+  <label for="cat-name">Pisica dorită:</label>
+  <input type="text" id="cat-name" readonly>
+</div>
+<div class="form-group">
+  <label for="your-name">Numele tău:</label>
+  <input type="text" id="your-name" required>
+</div>
+<div class="form-group">
+  <label for="your-email">Email:</label>
+  <input type="email" id="your-email" required>
+</div>
+<div class="form-group">
+  <label for="your-phone">Telefon:</label>
+  <input type="tel" id="your-phone" required>
+</div>
+<div class="form-group">
+  <label for="your-message">De ce dorești să adopți această pisică?</label>
+  <textarea id="your-message" rows="4" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Trimite cererea</button>
+</form>
+</div>
+</div>
+
+<!-- Footer (la fel ca în index.html) -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="img/logo/catcafe-logo.jpg" alt="CatCafe Logo">
+      </div>
+      <div class="footer-info">
+        <div class="footer-section">
+          <h3>Program</h3>
+          <p>Luni - Vineri: 10:00 - 21:00</p>
+          <p>Sâmbătă - Duminică: 10:00 - 22:00</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Aleea Basarabi 2, Iași</p>
+          <p><i class="fas fa-phone"></i> 0712 345 678</p>
+          <p><i class="fas fa-envelope"></i> catcafeiasi@yahoo.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Urmărește-ne</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/18oNdSycn6/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/catcafeiasi?igsh=MWkxNGRycHNtdWI2Mg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CatCafe. Toate drepturile rezervate.</p>
+      <div class="footer-links">
+        <a href="#">Termeni și condiții</a>
+        <a href="#">Politica de confidențialitate</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+</body>
+</html>

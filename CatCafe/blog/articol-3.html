@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Secretele unei cafele perfecte - CatCafe</title>
+ <style>
+  /* Stiluri de bază pentru pagină */
+  body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   color: #333;
+   margin: 0;
+   padding: 0;
+   background-color: #f9f5f0;
+  }
+
+  header {
+   background-color: white;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   padding: 10px 0;
+  }
+
+  .container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+  }
+
+  .logo {
+   padding: 10px 0;
+  }
+
+  nav ul {
+   list-style: none;
+   display: flex;
+   padding: 0;
+   margin: 0;
+  }
+
+  nav li {
+   margin-right: 20px;
+  }
+
+  nav a {
+   text-decoration: none;
+   color: #333;
+   font-weight: bold;
+  }
+
+  nav a:hover {
+   color: #8B4513;
+  }
+
+  /* Stiluri pentru articol */
+  .article-container {
+   max-width: 800px;
+   margin: 30px auto;
+   padding: 30px;
+   background-color: white;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+  }
+
+  .article-header {
+   margin-bottom: 30px;
+  }
+
+  .article-category {
+   color: #8B4513;
+   font-weight: bold;
+   margin-bottom: 10px;
+  }
+
+  .article-title {
+   color: #333;
+   font-size: 2.5em;
+   margin: 10px 0;
+   line-height: 1.2;
+  }
+
+  .article-date {
+   color: #777;
+   font-style: italic;
+   margin-bottom: 20px;
+  }
+
+  .article-image {
+   width: 100%;
+   height: auto;
+   border-radius: 5px;
+   margin-bottom: 30px;
+  }
+
+  .article-content {
+   font-size: 1.1em;
+   line-height: 1.8;
+  }
+
+  .article-content p {
+   margin-bottom: 20px;
+  }
+
+  .article-content h2 {
+   color: #8B4513;
+   margin-top: 40px;
+   margin-bottom: 20px;
+  }
+
+  .barista-tip {
+   background-color: #f5e6d8;
+   padding: 20px;
+   border-left: 4px solid #8B4513;
+   margin: 30px 0;
+  }
+
+  .barista-tip h3 {
+   color: #8B4513;
+   margin-top: 0;
+  }
+
+  .coffee-ratio {
+   background-color: #f8f8f8;
+   padding: 15px;
+   margin: 20px 0;
+   border-radius: 5px;
+   text-align: center;
+   font-weight: bold;
+  }
+
+  table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 30px 0;
+  }
+
+  table th {
+   background-color: #8B4513;
+   color: white;
+   padding: 12px;
+   text-align: left;
+  }
+
+  table td {
+   padding: 12px;
+   border-bottom: 1px solid #ddd;
+  }
+
+  table tr:nth-child(even) {
+   background-color: #f9f5f0;
+  }
+
+  .related-articles {
+   margin-top: 50px;
+   padding-top: 30px;
+   border-top: 1px solid #ddd;
+  }
+
+  .related-articles h3 {
+   color: #8B4513;
+   margin-bottom: 20px;
+  }
+
+  .related-articles ul {
+   padding-left: 20px;
+  }
+
+  .related-articles li {
+   margin-bottom: 10px;
+  }
+
+  .related-articles a {
+   color: #8B4513;
+   text-decoration: none;
+  }
+
+  .related-articles a:hover {
+   text-decoration: underline;
+  }
+
+  footer {
+   background-color: #333;
+   color: white;
+   padding: 30px 0;
+   margin-top: 50px;
+  }
+ </style>
+</head>
+
+<body>
+ <header>
+  <div class="container">
+   <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="despre-noi.html">Despre noi</a></li>
+     <li><a href="catalog.html">Catalog</a></li>
+     <li><a href="pisici.html">Pisici</a></li>
+     <li><a href="blog.html">Blog</a></li>
+     <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </nav>
+  </div>
+ </header>
+
+ <main>
+  <article class="article-container">
+   <div class="article-header">
+    <div class="article-category">Noutăți Cafenea</div>
+    <h1 class="article-title">Secretele unei cafele perfecte</h1>
+    <div class="article-date">8 Mai 2024</div>
+   </div>
+
+   <img src="../img/blog/coffee-beans.jpg" alt="Boabe de cafea de calitate într-un sac" class="article-image">
+
+   <div class="article-content">
+    <p>La CatCafe, credem că o cafea bună poate transforma o zi obișnuită într-una specială. În spatele fiecărei cești
+     de cafea pe care o servim se află un proces atent de selecție și preparare. În acest articol, barista noastră Denisa
+     vă dezvăluie secretele pentru obținerea aromei perfecte.</p>
+
+    <h2>Selecția boabelor: fundația unei cafele excelente</h2>
+
+    <p>Calitatea cafelei începe cu boabele. La CatCafe, folosim exclusiv boabe de cafea de specialitate, provenite din
+     ferme sustenabile din regiuni precum Ethiopia, Columbia și Costa Rica. Boabele sunt prăjite la comandă de
+     partenerii noștri locali, asigurându-ne că primim întotdeauna cafea proaspătă.</p>
+
+    <div class="barista-tip">
+     <h3>Sfatul Denisei:</h3>
+     <p>"Căutați întotdeauna data prăjirii pe pachetul de cafea. Boabele de cafea sunt la potențialul maxim între 7 și
+      21 de zile de la prăjire. După această perioadă, aromele încep să se diminueze."</p>
+    </div>
+
+    <p>Boabele de cafea sunt ființe vii - ele conțin uleiuri și compuși aromatici care se schimbă în timp. Atunci când
+     cumpărați cafea, alegeți cantități mai mici dar mai frecvent, pentru a vă asigura că aveți mereu cafea proaspătă.
+    </p>
+
+    <h2>Măcinarea: pasul crucial adesea neglijat</h2>
+
+    <p>Măcinarea este poate cel mai important factor care afectează calitatea extracției. La CatCafe, măcinăm boabele
+     chiar înainte de preparare pentru a păstra aromele intacte.</p>
+
+    <p>Gradul de măcinare trebuie adaptat metodei de preparare:</p>
+
+    <table>
+     <tr>
+      <th>Metodă de preparare</th>
+      <th>Grad de măcinare</th>
+      <th>Aspect</th>
+     </tr>
+     <tr>
+      <td>Espresso</td>
+      <td>Foarte fin</td>
+      <td>Ca zahărul pudră</td>
+     </tr>
+     <tr>
+      <td>Ibric/Cezve</td>
+      <td>Fin</td>
+      <td>Ca sarea fină</td>
+     </tr>
+     <tr>
+      <td>V60/Chemex</td>
+      <td>Mediu</td>
+      <td>Ca nisipul</td>
+     </tr>
+     <tr>
+      <td>French Press</td>
+      <td>Grosier</td>
+      <td>Ca zahărul brut</td>
+     </tr>
+    </table>
+
+    <div class="barista-tip">
+     <h3>Sfatul Denisei:</h3>
+     <p>"Investiția într-o râșniță de calitate este cel mai important upgrade pe care îl puteți face pentru prepararea
+      cafelei acasă. O măcinare uniformă este esențială pentru extracția echilibrată a aromelor."</p>
+    </div>
+
+    <h2>Apa: componentul majoritar</h2>
+
+    <p>Apa reprezintă peste 98% din cafeaua dvs., așa că calitatea ei este crucială. La CatCafe, folosim un sistem de
+     filtrare în mai multe etape pentru a ne asigura că apa noastră are nivelul optim de minerale.</p>
+
+    <p>Pentru cea mai bună extracție, apa trebuie să aibă:</p>
+    <ul>
+     <li>Un pH neutru (în jur de 7)</li>
+     <li>O duritate moderată (între 75-150 ppm TDS)</li>
+     <li>Temperatură constantă (91-96°C pentru majoritatea metodelor)</li>
+    </ul>
+
+    <p>Dacă locuiți într-o zonă cu apă dură, considerați folosirea unui filtru sau a apei îmbuteliate cu un conținut
+     adecvat de minerale.</p>
+
+    <h2>Raportul cafea-apă: formula perfectă</h2>
+
+    <p>O preparare echilibrată începe cu un raport corect între cafea și apă. La CatCafe, folosim o formulă precisă
+     pentru fiecare metodă de preparare.</p>
+
+    <div class="coffee-ratio">
+     Raportul nostru standard: 1:16 (1g cafea la 16g apă)
+    </div>
+
+    <p>Acest raport poate fi ajustat în funcție de preferințele personale:</p>
+    <ul>
+     <li>Pentru o cafea mai intensă: 1:15 sau chiar 1:14</li>
+     <li>Pentru o cafea mai lejeră: 1:17 sau 1:18</li>
+    </ul>
+
+    <p>Folosirea unui cântar digital pentru a măsura cafeaua și apa vă va ajuta să obțineți rezultate consistente de
+     fiecare dată.</p>
+
+    <h2>Timp de extracție: răbdarea este cheia</h2>
+
+    <p>Fiecare metodă de preparare are propriul său timp ideal de extracție. Grăbirea procesului poate duce la o cafea
+     subextrasă (acidă, slab aromată), în timp ce prelungirea excesivă poate rezulta într-o cafea supraextrasă (amară,
+     astringentă).</p>
+
+    <p>Iată timpii optimi pentru metodele populare:</p>
+    <ul>
+     <li>Espresso: 25-30 secunde</li>
+     <li>Pour-over (V60, Chemex): 2:30-3:30 minute</li>
+     <li>French Press: 4 minute</li>
+     <li>AeroPress: 1:30-2:30 minute</li>
+    </ul>
+
+    <div class="barista-tip">
+     <h3>Sfatul Elenei:</h3>
+     <p>"Pentru o cafea filter (pour-over), începeți cu un 'bloom' - adăugați suficientă apă pentru a umezi toate
+      boabele și așteptați 30-45 secunde. Acest pas permite dioxidului de carbon să scape și duce la o extracție mai
+      uniformă."</p>
+    </div>
+
+    <h2>Echipamentul: aliatul tău în căutarea perfecțiunii</h2>
+
+    <p>La CatCafe, am investit în echipamente de calitate, dar nu trebuie să cheltuiți o avere pentru a prepara o cafea
+     excelentă acasă. Iată elementele esențiale pentru orice pasionat de cafea:</p>
+
+    <ul>
+     <li>O râșniță de calitate cu lame conice</li>
+     <li>Un cântar digital cu precizie de 0.1g</li>
+     <li>Un termometru (sau un ibric cu termometru încorporat)</li>
+     <li>O metodă de preparare care se potrivește stilului dvs. (V60, AeroPress, French Press etc.)</li>
+    </ul>
+
+    <p>Chiar și cu echipament modest, aplicarea principiilor corecte de preparare va îmbunătăți semnificativ calitatea
+     cafelei dvs.</p>
+
+    <h2>Concluzie: Arta cafelei perfecte</h2>
+
+    <p>Prepararea unei cafele excelente este o combinație de știință și artă. Cu boabe de calitate, apă bună, o măcinare
+     corectă și un timp de extracție adecvat, puteți obține rezultate remarcabile chiar și acasă.</p>
+
+    <p>La CatCafe, perfecționăm constant tehnicile noastre și experimentăm cu noi metode de preparare. Suntem
+     întotdeauna bucuroși să împărtășim din experiența noastră cu iubitorii de cafea.</p>
+
+    <p>Vă invităm să ne vizitați cafeneaua pentru a degusta cafeaua noastră de specialitate, poate în compania pisicilor
+     noastre prietenoase care fac experiența și mai plăcută.</p>
+
+    <p>Denisa, barista noastră principală, oferă și workshop-uri lunare despre prepararea cafelei pentru cei interesați
+     să-și aprofundeze cunoștințele. Urmăriți-ne pe rețelele sociale pentru datele următoarelor sesiuni.</p>
+   </div>
+
+   <div class="related-articles">
+    <h3>Articole conexe:</h3>
+    <ul>
+     <li><a href="articol-1.html">Povestea Bellei</a></li>
+     <li><a href="articol-2.html">5 sfaturi pentru îngrijirea pisicilor adoptate</a></li>
+     <li><a href="articol-4.html">Jucării DIY pentru pisica ta</a></li>
+    </ul>
+   </div>
+  </article>
+ </main>
+
+ <footer>
+  <div class="container">
+   <p>&copy; 2025 CatCafe. Toate drepturile rezervate.</p>
+  </div>
+ </footer>
+</body>
+
+</html>
